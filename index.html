@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-card">
+            <div class="header">
+                <h1>🎯 Number Guessing Game</h1>
+                <p class="subtitle">Can you guess the secret number?</p>
+            </div>
+            
+            <div class="game-info">
+                <div class="info-item">
+                    <span class="label">Range:</span>
+                    <span class="value" id="range">1 - 100</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Attempts:</span>
+                    <span class="value" id="attempts">0</span>
+                </div>
+            </div>
+
+            <div class="game-area">
+                <div class="input-section">
+                    <input type="number" id="guessInput" placeholder="Enter your guess..." min="1" max="100">
+                    <button id="submitGuess" class="btn-primary">
+                        <span>Guess</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                </div>
+                
+                <div class="feedback" id="feedback">
+                    <div class="feedback-icon">🤔</div>
+                    <p>Make your first guess!</p>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <button id="newGame" class="btn-secondary">
+                    <span>New Game</span>
+                </button>
+                <div class="difficulty-selector">
+                    <label for="maxValue">Max Number:</label>
+                    <select id="maxValue">
+                        <option value="10">Easy (1-10)</option>
+                        <option value="50">Medium (1-50)</option>
+                        <option value="100" selected>Hard (1-100)</option>
+                        <option value="1000">Expert (1-1000)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+            <a href="/Assignment/Functions/index.html" class="btn-primary" style=" background: linear-gradient(135deg, #e4e6ea, #bacbe9);
+                                                                                color: rgb(0, 0, 0); 
+                                                                                width: 500px; 
+                                                                                margin-top: 30px; 
+                                                                                display: flex; 
+                                                                                justify-content: center; 
+                                                                                align-items: center; 
+                                                                                text-decoration: none;   
+                                                                                padding: 14px 24px;
+                                                                                border: none;
+                                                                                border-radius: 12px;
+                                                                                font-size: 1rem;
+                                                                                font-weight: 600;
+                                                                                cursor: pointer;
+                                                                                transition: all 0.3s ease;
+                                                                                display: flex;
+                                                                                align-items: center;
+                                                                                gap: 8px;
+                                                                                min-width: 140px;
+                                                                                justify-content: center;">
+            See All My Assignment
+        </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
